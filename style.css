@@ -72,7 +72,7 @@ body {
   opacity: 1;
   transform: translateY(10px);
 }
-/* 緑の丸 */
+/* 青の丸 */
 .indicator {
   position: absolute;
   top: -50%;
@@ -83,7 +83,7 @@ body {
   border: 6px solid var(--color);
   transition: 0.5s;
 }
-/* 緑の丸の左部分の変形 */
+/* 青の丸の左部分の変形 */
 .indicator::before {
   content: "";
   position: absolute;
@@ -95,7 +95,7 @@ body {
   border-top-right-radius: 20px;
   box-shadow: 0px -10px 0 0 var(--color);
 }
-/* 緑の丸の右部分の変形 */
+/* 青の丸の右部分の変形 */
 .indicator::after {
   content: "";
   position: absolute;
