@@ -10,24 +10,24 @@
   <body>
     <div class="navigation">
       <ul>
-        <li class="list">
+        <li class="list active">
           <a href="#">
             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-            <span class="text">Home</span>
+            <span class="text">ホーム</span>
           </a>
         </li>
-        <li class="list active">
+        <li class="list">
           <a href="#">
             <span class="icon"
               ><ion-icon name="person-outline"></ion-icon
             ></span>
-            <span class="text">Profile</span>
+            <span class="text">アカウント</span>
           </a>
         </li>
         <li class="list">
           <a href="#">
             <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <span class="text">Message</span>
+            <span class="text">メッセージ</span>
           </a>
         </li>
         <li class="list">
@@ -35,7 +35,7 @@
             <span class="icon"
               ><ion-icon name="camera-outline"></ion-icon
             ></span>
-            <span class="text">Photos</span>
+            <span class="text">写真</span>
           </a>
         </li>
         <li class="list">
@@ -43,7 +43,7 @@
             <span class="icon"
               ><ion-icon name="settings-outline"></ion-icon
             ></span>
-            <span class="text">Settings</span>
+            <span class="text">設定</span>
           </a>
         </li>
         <div class="indicator"></div>
@@ -55,6 +55,7 @@
         list.forEach((item) => item.classList.remove("active"));
         this.classList.add("active");
       }
+      // forEachで全てのリストにaddEventListenerをかけさせる
       list.forEach((item) => item.addEventListener("click", activeLink));
     </script>
     <script
